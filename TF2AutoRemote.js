@@ -41,11 +41,27 @@ module.exports = class TF2AutoRemote {
 	}
 
 	/**
+	 * Clears bots pricelist
+	 * @return {Promise}
+	 */
+	clearPricelist() {
+		return this.callMethod("clearPricelist");
+	}
+
+	/**
 	 * Get info about bot
 	 * @return {Promise}
 	 */
 	getInfo() {
 		return this.callMethod("getInfo");
+	}
+
+	/**
+	 * Get bot polldata
+	 * @return {Promise}
+	 */
+	getTrades() {
+		return this.callMethod("getTrades");
 	}
 
 	/**
